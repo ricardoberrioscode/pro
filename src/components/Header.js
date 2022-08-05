@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(1),
   },
   title: {
-    color: "tomato",
+    color: "#009688",
   },
   subtitle: {
     color: "tan",
@@ -37,18 +37,22 @@ const Header = () => {
   return (
     <Box className={classes.typedContainer}>
       <Grid container justify="center">
-        <Avatar className={classes.avatar} src={avatar} alt="Mahmudul Alam" />
+        <Avatar className={classes.avatar} src={avatar} alt="Ricardo Berríos" />
       </Grid>
       <Typography className={classes.title} variant="h4">
-        <Typed strings={["Mahmudul Alam"]} typeSpeed={40} />
+        <Typed strings={["Ricardo Berríos"]} typeSpeed={40} />
+      </Typography>
+      <Typography className={classes.title} variant="h6">
+        <Typed strings={["Systems Engineer"]} typeSpeed={40} />
       </Typography>
 
       <Typography className={classes.subtitle} variant="h5">
         <Typed
           strings={[
-            "Frontend Developer",
-            "Backend Developer",
-            "Native App Developer",
+            "FullStack Developer",
+            "SQL | NoSql",
+            "IT Support Specialist",
+            "System Administrator"
           ]}
           typeSpeed={40}
           backSpeed={50}

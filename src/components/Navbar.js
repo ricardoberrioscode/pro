@@ -24,18 +24,18 @@ import Footer from "../components/Footer";
 
 const useStyles = makeStyles((theme) => ({
   appbar: {
-    background: "#222",
+    background: "transparent",
     margin: 0,
   },
   arrow: {
-    color: "tomato",
+    color: "#009688", //AQUI
   },
   title: {
-    color: "tan",
+    color: "A700",
   },
   menuSliderContainer: {
     width: 250,
-    background: "#511",
+    background: "#616161",
     height: "100%",
   },
   avatar: {
@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
     height: theme.spacing(13),
   },
   listItem: {
-    color: "tan",
+    color: "WHITE",
   },
 }));
 
@@ -63,7 +63,7 @@ const Navbar = () => {
 
   const sideList = () => (
     <Box className={classes.menuSliderContainer} component="div">
-      <Avatar className={classes.avatar} src={avatar} alt="Mahmudul Alam" />
+      <Avatar className={classes.avatar} src={avatar} alt="Ricardo Berríos" />
       <Divider />
       <List>
         {menuItems.map((item, i) => (
